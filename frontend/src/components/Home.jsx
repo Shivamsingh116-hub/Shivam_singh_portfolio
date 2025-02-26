@@ -9,7 +9,7 @@ const Home = () => {
                     <h1>I'm Shivam Singh</h1>
                     <span>सॉफ़्टवेयर Developer.</span>
                     <h1>based in INDIA</h1>
-                    <a href='../assets/Resume.pdf' download='Shivam_resume.pdf' type='application/pdf'>Download CV</a>
+                    <a href='/Resume.pdf' download='Shivam_resume.pdf' type='application/pdf'>Download CV</a>
                 </div>
                 <div className='right-container'>
                    <img src={image} alt='img'/>
