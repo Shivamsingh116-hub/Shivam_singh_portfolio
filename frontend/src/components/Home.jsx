@@ -8,7 +8,7 @@ const Home = () => {
                 <div className='left-container'>
                     <h1>I'm Shivam Singh</h1>
                     <span>सॉफ़्टवेयर Developer.</span>
-                    <h1>based in INDIA</h1>
+                    <h1 className='mb-4'>based in INDIA</h1>
                     <a href='/Resume.pdf' download='Shivam_resume.pdf' type='application/pdf'>Download CV</a>
                 </div>
                 <div className='right-container'>
