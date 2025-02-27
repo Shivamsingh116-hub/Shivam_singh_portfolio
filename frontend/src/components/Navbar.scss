@@ -10,10 +10,12 @@
     z-index: 100;
     background: linear-gradient(45deg, #6B00E6, #8990E0, #000000);
     box-sizing: border-box;
+    position: relative;
 
     img {
         height: 100%;
         box-sizing: border-box;
+
     }
 
     .navitem {
@@ -22,6 +24,9 @@
         gap: 30px;
         list-style: none;
         box-sizing: border-box;
+        color: white;
+
+        text-shadow: 0 0 10px rgba(#8A2BE2, 0.8);
 
         li {
             text-decoration: none;
@@ -37,22 +42,41 @@
             * {
                 text-decoration: none;
                 color: #D3D3D3;
+
                 &::before {
                     position: absolute;
                     content: '';
-                    width:0;
+                    width: 0;
                     height: 2px;
                     background: #D3D3D3;
                     bottom: 0px;
                     transition: all 0.1s ease-in-out;
                 }
-                &:hover{
-                    &::before{
+
+                &:hover {
+                    &::before {
                         width: 100%;
                     }
                 }
-                
+
             }
         }
+
+        @media (max-width:768px) {
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            right: 0px;
+            padding: 20px;
+            align-items: flex-start;
+            color: white;
+            text-shadow: 0 0 10px rgba(#8A2BE2, 0.8);
+            background: linear-gradient(45deg, #6B00E6, #8990E0, #000000);
+            height: 100vh;
+        }
+    }
+    @media (max-width:768px) {
+       height: 70px;
+        padding: 0 30px;
     }
 }
